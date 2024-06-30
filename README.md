@@ -7,7 +7,7 @@
 
 ---
 
-### Задание 1  Кеширование
+### Задание 1  
 
 Задание 1
 1.1. Поднимите чистый инстанс MySQL версии 8.0+. Можно использовать локальный сервер или контейнер Docker.
@@ -45,6 +45,9 @@ CREATE USER 'dbuser'@'localhost' IDENTIFIED BY '123password';
 GRANT ALL PRIVILEGES ON sakila.* to 'sys_temp'@'localhost';
 ```
 
+![Снимок экрана 2024-06-23 221204](https://github.com/ka3-14bara/12-02-sdb/assets/142439642/ec8120dc-a473-493b-86b7-318e652f31be)
+![image](https://github.com/ka3-14bara/12-02-sdb/assets/142439642/19749a5c-b5f2-4c65-802b-d569538f2808)
+
 ```
 SELECT host, user, password_expired FROM mysql.user;
 ```
@@ -53,9 +56,11 @@ SELECT host, user, password_expired FROM mysql.user;
 ALTER USER 'sys_temp'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
 ```
 
+![Снимок экрана 2024-06-30 145358](https://github.com/ka3-14bara/12-02-sdb/assets/142439642/da38190a-178d-4852-96d4-1f96ede9d2bf)
+
 ---
 
-### Задание 2 Memcached
+### Задание 2 
 
 Составьте таблицу, используя любой текстовый редактор или Excel, в которой должно быть два столбца: в первом должны быть названия таблиц восстановленной базы, во втором названия первичных ключей этих таблиц. Пример: (скриншот/текст)
 
@@ -67,6 +72,7 @@ customer         | customer_id
 ---
 ### Решение 2
 
+![Снимок экрана 2024-06-30 151140](https://github.com/ka3-14bara/12-02-sdb/assets/142439642/5b0f9e2b-dd03-421f-a59b-25ace81f65e8)
 
 
 ---
